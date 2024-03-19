@@ -2,7 +2,7 @@ import pandas as pd
 from pprint import pprint
 import re
 
-data = pd.read_csv('E:\\race\\service_out\\data\\new_data.csv', header='infer', delimiter=',', encoding='utf-8')
+data = pd.read_csv('new_data.csv', header='infer', delimiter=',', encoding='utf-8')
 data.fillna('', inplace=True)
 array = data.values
 
@@ -22,4 +22,4 @@ for i in dataSet:
 
 # 将newData存入csv
 newData = pd.DataFrame(newData, columns=data.columns)
-newData.to_csv('E:\\race\\service_out\\data\\shixi.csv', index=False, encoding='utf-8')
+newData.to_csv('shixi.csv', index=False, encoding='utf-8')

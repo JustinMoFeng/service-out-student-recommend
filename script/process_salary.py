@@ -7,7 +7,7 @@ def calculate_year_salary(salary):
     if salary == '面议':
         return "0-0"
     # 如果salary包含'薪'，则按照原有逻辑处理
-    if '薪' in salary:
+    if '薪' in salary: 
         try:
             base_salary, multiplier = salary.split('·')
             low, high = base_salary.split('-')
